@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body {
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+    background-color: #7789AB;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+   
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color:#f0f0f07e;
+
+}
+nav a:first-child:hover{
+    background-color: none;
+
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    
+}
+.pr{
+    color: #c7f022 ;
+    
+}
+.it{
+    color: #c7f022 ;
+    padding-left: 5px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 100vh;
+    width: 350px;
+    z-index: 999;
+    background-color: #7789ab42;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(1, 1, 1, 0.5);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a{
+     width: 100%;
+}
+.sidebar li{
+    width: 100%;
+}
+.menu{
+    color: black;
+}
+.menu-button{
+    display: none;
+}
+@media (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+      .menu-button{
+        display: flex;
+    }   
+}
+@media (max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    } 
+  
+    }
+    .bt {
+  display: block;
+  width: 300px;
+  padding: 31px 5px;
+  border-radius: 5px;
+  margin: 20% auto;
+  background-color: orange;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 32px;
+  color: mintcream;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.bt:hover {
+  background-color: limegreen;
+}
